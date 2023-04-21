@@ -12,3 +12,5 @@ As an added bonus it'll also alert you if you target an elite unfriendly NPC.
 *  Download **[Latest Version](https://github.com/McPewPew/YouveGotRedOnYou/archive/master.zip)**
 *  Unzip it into WoW\Interface\AddOns
 *  Rename "YouveGotRedOnYou-master" to "YouveGotRedOnYou"
+
+Use this version if you use unitscan-turtle
