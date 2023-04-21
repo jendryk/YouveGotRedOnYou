@@ -9,18 +9,7 @@ WMPVP:SetScript("OnEvent", function()
                   wrmpvpmsg = ("***" .. UnitName("target") .. " is PVP flagged!***")
                   UIErrorsFrame:AddMessage(wrmpvpmsg, 1.0, 0.0, 0.0, 53, 5)
                   PlaySoundFile("Sound/Character/Gnome/GnomeVocalMale/GnomeMaleNo03.wav")
-               end
-            elseif UnitReaction("player", "target") < 5 then
-               trgtisscry = UnitClassification("target")
-               if trgtisscry == "worldboss" or trgtisscry == "rareelite" or trgtisscry == "elite" then
-                  wrmpvpmsg = (UnitName("target") .. " is " .. trgtisscry .."!")
-                  UIErrorsFrame:AddMessage(wrmpvpmsg, 1.0, 0.0, 0.0, 53, 5)
-                  PlaySoundFile("Sound/Character/Gnome/GnomeVocalMale/GnomeMaleFlee01.wav")    
-               elseif trgtisscry == "rare" then
-                  wrmpvpmsg = (UnitName("target") .. " is " .. trgtisscry .."!")
-                  UIErrorsFrame:AddMessage(wrmpvpmsg, 1.0, 0.0, 1.0, 53, 5)
-                  PlaySoundFile("Sound/Character/Gnome/GnomeVocalMale/GnomeMaleCheer02.wav")
-               end    
+               end  
             end
          end 
       end
